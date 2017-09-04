@@ -1,0 +1,23 @@
+{
+  "name": "sockets-basic",
+  "author": "Steve Geer <stevenegeer@gmail.com>",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "engines": {
+    "node": ">=6.9.5"
+  },
+  "scripts": {
+    "server": "nodemon ./server/socket-server.js",
+    "start": "python -m SimpleHTTPServer 8888"
+  },
+  "keywords": [
+    "socketio",
+    "sockets",
+    "websockets"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "socket.io": "^2.0.3"
+  }
+}
