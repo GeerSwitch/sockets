@@ -24,7 +24,7 @@ userNs.on(Events.CONNECT, socket => {
 
   // Clean up once a socket disconnects.
   socket.on(Events.DISCONNECT, () => {
-    usersOnline = 0;
+    usersOnline--;
   });
 
   setTimeout(() => {

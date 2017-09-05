@@ -22,3 +22,5 @@ Each directory has its own package and functionality. `cd` into each and follow 
 - JWT Authentication
 - Integrating Redis
 - More complex room/namespace examples
+- Integration with Angular, AngularJS and React
+- Using with Express
