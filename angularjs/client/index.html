@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="sockets">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
+  <title>Sockets | Basic</title>
+</head>
+
+<body ng-controller="MainController as $main">
+  <h1>Socket.IO in Angular</h1>
+  <ul>
+    <li ng-repeat="song in $main.songs">
+      <strong ng-bind="song.artist"></strong>
+      <span ng-bind="song.title"></span>
+      <small ng-bind="song.duration"></small>
+    </li>
+  </ul>
+  <form ng-submit="$main.addSong()" name="newSongForm">
+    <div>
+      Artist
+      <input ng-model="$main.model.artist">
+    </div>
+    <div>
+      Title
+      <input ng-model="$main.model.title">
+    </div>
+    <div>
+      Duration
+      <input ng-model="$main.model.duration">
+    </div>
+    <button type="submit">Add new song</button>
+  </form>
+  <script src="dist/build.js"></script>
+</body>
+</html>

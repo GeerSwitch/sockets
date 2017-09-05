@@ -1,0 +1,30 @@
+{
+  "name": "sockets-basic",
+  "author": "Steve Geer <stevenegeer@gmail.com>",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "engines": {
+    "node": ">=6.9.5"
+  },
+  "scripts": {
+    "start": "nodemon ./server/server.js"
+  },
+  "keywords": [
+    "socketio",
+    "sockets",
+    "websockets"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "angular": "^1.6.6",
+    "body-parser": "^1.17.2",
+    "ejs": "^2.5.7",
+    "express": "^4.15.4",
+    "gulp": "^3.9.1",
+    "socket.io": "^2.0.3"
+  },
+  "devDependencies": {
+    "gulp-concat": "^2.6.1"
+  }
+}
