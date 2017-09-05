@@ -1,0 +1,85 @@
+* {
+  box-sizing: border-box;
+}
+
+#chat-form,
+#messages {
+  width: 400px;
+}
+
+#chat-form {
+  padding: 5px;
+  display: flex;
+}
+
+#messages {
+  border: 1px solid #ccc;
+  height: 300px;
+  padding: 0 15px;
+  overflow-x: hidden;
+}
+
+input {
+  flex: 1;
+  margin-right: 5px;
+}
+
+.message {
+  margin-top: 5px;
+}
+
+.message p {
+  background: #4286f4;
+  border-radius: 10px;
+  padding: 8px 12px;
+  color: white;
+  font-family: sans-serif;
+  font-size: 14px;
+  display: inline-block;
+}
+
+.message.theirs {
+  text-align: right;
+}
+
+.message.animate {
+  animation: pop-in 150ms ease-in-out;
+}
+
+.message.theirs p {
+  background: #ddd;
+  color: #333;
+  text-align: right;
+}
+
+#indicator {
+  text-align: right;
+}
+
+#indicator img {
+  margin-right: -20px;
+  clip: inset(0, 20px, 0, 0);
+}
+
+#indicator.typing img {
+  transform: scale(1.0)
+}
+
+#indicator.kill {
+  display: none;
+}
+
+#indicator img {
+  transition: transform 250ms ease-in-out;
+  transform-origin: 70% 50%;
+  transform: scale(0.0)
+}
+
+@keyframes pop-in {
+  from {
+    transform: translateY(5px);
+  }
+  to {
+    transform: translateY(0px);
+  }
+}
