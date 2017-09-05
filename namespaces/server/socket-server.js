@@ -26,4 +26,8 @@ userNs.on(Events.CONNECT, socket => {
   socket.on(Events.DISCONNECT, () => {
     usersOnline = 0;
   });
+
+  setTimeout(() => {
+    socket.emit(Events.MESSAGE, `I see you're still here!`)
+  }, 3000);
 });
