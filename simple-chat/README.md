@@ -1,8 +1,8 @@
 # Basic socket implementation
 
-Bare minimum example of connecting to a local websocket server.  One connected,
-the server will emit some `lorem ipsum` messages and disconnect once there are no
-more messages.
+Proof of concept of a simple chat application.  Users are notified of when other
+connected parties are typing (and stop), as well as differently colored
+bubbles.
 
 ## Up and running
 
@@ -10,4 +10,6 @@ more messages.
 - `npm start`
 - `npm run server`
 
-Open a browser to `http://localhost:8888/client`.
+Open two browsers/tabs and navigate to `http://localhost:8888/client`.
+
+Talk to yourself.
